@@ -8,10 +8,42 @@
     <meta name="description" content="Startup description">
     <title>Startup</title>
   </head>
-  <body>
-    <div id="app" class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex justify-center p-3.5">
+
+  <body class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex justify-center p-3.5">
+   <main class="w-full flex">
+    <section class="flex justify-center gap-4 w-[40%] p-6 items-end">
+      <div class="flex w-[50rem] bg-neutral-800 h-[50rem] items-end pb-10 justify-center">
+        <div class="flex bg-neutral-700 w-[38rem] h-[10rem] justify-start  text-purple-600 items-end" >
+          
+          <textarea class="w-full h-full"></textarea>
+
+        </div>
+
+      </div>
+
+    </section>
+    <section class="flex justify-between gap-6 w-[60%]  p-6 items-end">
       
-    </div>
+      <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
+        <h1 class="text-purple-600 font-bold italic text-center ">To do</h1>
+          
+      </div>
+
+         <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
+        <h1 class="text-purple-600 font-bold italic text-center ">Progress</h1>
+          
+      </div>
+
+         <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
+        <h1 class="text-purple-600 font-bold italic text-center ">Done</h1>
+          
+      </div>
+
+    </section>
+
+    
+    
+   </main>
     <script type="module" src="/src/ts/main.ts"></script>
   </body>
 </html>
