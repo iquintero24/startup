@@ -1,10 +1,7 @@
 import OpenAI from "openai"
 import { API_KEY } from "./config"
 import type { TasksStructure } from "./taskmanager";
-type UserPrompt = {
-  tasks: TasksStructure,
-  request: string
-}
+
 type SystemResponse = {
   tasks: TasksStructure,
   response: string

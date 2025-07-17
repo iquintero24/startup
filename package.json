@@ -7,15 +7,15 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "config": "echo \"export const API_KEY =\"\"\" > ./src/ts/config.ts"
+    "config": "echo 'export const API_KEY = \"\";' > ./src/ts/config.ts"
   },
   "devDependencies": {
-    "typescript": "~5.8.3",
-    "vite": "^7.0.4"
+    "typescript": "5.8.3",
+    "vite": "7.0.4"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.1.11",
+    "@tailwindcss/vite": "4.1.11",
     "openai": "5.10.1",
-    "tailwindcss": "^4.1.11"
+    "tailwindcss": "4.1.11"
   }
 }
