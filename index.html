@@ -25,17 +25,22 @@
     <section class="flex justify-between gap-6 w-[60%]  p-6 items-end">
       
       <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
-        <h1 class="text-purple-600 font-bold italic text-center ">To do</h1>
-          
+        <h1 class="text-purple-600 font-bold italic text-center">To do</h1>
+        <div id="todo-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+        <input type="text" id="todo-input" placeholder="escribe una tarea" class="mt-2 p-2 rounded text-black focus:outline-none">
       </div>
 
          <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
         <h1 class="text-purple-600 font-bold italic text-center ">Progress</h1>
+        <div id="progress-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+        <input type="text" id="progress-input" placeholder="escribe una tarea" class="mt-2 p-2 rounded text-black focus:outline-none">
           
       </div>
 
          <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
         <h1 class="text-purple-600 font-bold italic text-center ">Done</h1>
+        <div id="done-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+        <input type="text" id="done-input" placeholder="escribe una tarea" class="mt-2 p-2 rounded text-black focus:outline-none">
           
       </div>
 
