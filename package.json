@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "config": "echo \"export const API_KEY =\"\"\" > ./src/ts/config.ts"
   },
   "devDependencies": {
     "typescript": "~5.8.3",
@@ -14,6 +15,7 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
+    "openai": "5.10.1",
     "tailwindcss": "^4.1.11"
   }
 }

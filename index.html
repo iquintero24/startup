@@ -1,54 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/style.css" />
-    <meta name="description" content="Startup description">
-    <title>Startup</title>
-  </head>
 
-  <body class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-900 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))] flex justify-center p-3.5">
-   <main class="w-full flex">
-    <section class="flex justify-center gap-4 w-[40%] p-6 items-end">
-      <div class="flex w-[50rem] bg-neutral-800 h-[50rem] items-end pb-10 justify-center">
-        <div class="flex bg-neutral-700 w-[38rem] h-[10rem] justify-start  text-purple-600 items-end" >
-          
-          <textarea class="w-full h-full"></textarea>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./src/style.css" />
+  <meta name="description" content="Startup description">
+  <title>Startup</title>
+</head>
 
+<body class="text-gray-900">
+  <div
+    class="absolute inset-0 -z-10 h-full w-full bg-white bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]">
+  </div>
+  <main class="h-screen w-full flex gap-3 p-2">
+
+    <section class="grid grid-cols-3 gap-2 w-[65%]">
+
+      <div class="flex flex-col bg-black/5 backdrop-blur-xs h-full p-6">
+        <h1 class="font-bold italic text-center">To do</h1>
+        <div id="todo-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+
+      </div>
+
+      <div class="flex flex-col bg-black/5 backdrop-blur-xs h-full p-6">
+        <h1 class="font-bold italic text-center ">Progress</h1>
+        <div id="progress-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+
+
+      </div>
+
+      <div class="flex flex-col bg-black/5 backdrop-blur-xs h-full p-6">
+        <h1 class="font-bold italic text-center ">Done</h1>
+        <div id="done-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
+
+
+      </div>
+
+    </section>
+
+    <section class="flex w-[35%] items-end">
+      <div class="flex w-full bg-black/5 backdrop-blur-xs h-full items-end justify-center border border-gray-200 pb-14">
+        <div class="flex w-full">
+
+          <section id="ChatDrawer">
+
+          </section>
+          <form class="w-full bg-gray-300" id="chatForm">
+            <textarea class="w-full resize-none p-2" placeholder="Write your message"></textarea>
+            <div class="flex w-full justify-end px-4 pb-4">
+              <button type="submit" class="bg-red-500 py-1 px-2">
+                send
+              </button>
+            </div>
+          </form>
         </div>
 
       </div>
 
     </section>
-    <section class="flex justify-between gap-6 w-[60%]  p-6 items-end">
-      
-      <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
-        <h1 class="text-purple-600 font-bold italic text-center">To do</h1>
-        <div id="todo-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
-       
-      </div>
 
-         <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
-        <h1 class="text-purple-600 font-bold italic text-center ">Progress</h1>
-        <div id="progress-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
-    
-          
-      </div>
 
-         <div class="flex flex-col  w-[20rem] bg-neutral-800 h-[50rem] p-6">
-        <h1 class="text-purple-600 font-bold italic text-center ">Done</h1>
-        <div id="done-list" class="flex flex-col gap-2 flex-1 overflow-y-auto h-auto"></div>
-    
-          
-      </div>
+  </main>
+  <script type="module" src="/src/ts/main.ts"></script>
+</body>
 
-    </section>
-
-    
-    
-   </main>
-    <script type="module" src="/src/ts/main.ts"></script>
-  </body>
 </html>
